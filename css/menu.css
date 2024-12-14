@@ -1,0 +1,170 @@
+.menu-page {
+    padding: 120px 5% 50px;
+    min-height: 100vh;
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.menu-section {
+    margin-bottom: 4rem;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: calc(var(--section-index) * 0.2s);
+}
+
+.menu-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.menu-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: var(--gradient);
+}
+
+.subtitle {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.menu-item {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+}
+
+.menu-item:hover::before {
+    opacity: 0.1;
+}
+
+.menu-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-item .price {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 2;
+}
+
+.supplements-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-page {
+        padding: 100px 3% 30px;
+    }
+
+    .menu-title {
+        font-size: 2.5rem;
+    }
+
+    .menu-section h2 {
+        font-size: 2rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+}
+
+/* Custom Animations */
+@keyframes menuItemHover {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.menu-item:hover {
+    animation: menuItemHover 0.5s ease;
+}
+
+/* Scroll Reveal Animation */
+.menu-section {
+    --section-index: 0;
+}
+
+#panini { --section-index: 1; }
+#tacos { --section-index: 2; }
+#pates { --section-index: 3; }
+#chawarma { --section-index: 4; }
+#kids { --section-index: 5; }
+#supplements { --section-index: 6; }
+
+/* Hover Effects */
+.menu-item:hover .price {
+    animation: priceGlow 1s ease infinite;
+}
+
+@keyframes priceGlow {
+    0%, 100% {
+        color: var(--primary-color);
+    }
+    50% {
+        color: var(--secondary-color);
+    }
+}

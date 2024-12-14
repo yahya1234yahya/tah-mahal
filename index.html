@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taj Mahal Restaurant - Khouribga</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="images/logo.png" alt="Taj Mahal Logo">
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-social">
+            <a href="https://facebook.com/Snack_taj_mahal" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/snack_taj_mahal" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="tel:0770875713"><i class="fas fa-phone"></i></a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="glowing-text">Welcome to Taj Mahal</h1>
+            <p class="hero-subtitle">Experience the finest fusion of flavors in Khouribga</p>
+            <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-utensils"></i>
+                    <span>Authentic Cuisine</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <span>Open Daily</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-motorcycle"></i>
+                    <span>Fast Delivery</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="menu.html" class="cta-button primary">View Menu</a>
+                <a href="#contact" class="cta-button secondary">Contact Us</a>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-dishes">
+            <div class="section-header">
+                <h2 class="section-title">Our Signature Dishes</h2>
+                <div class="dish-categories">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="tacos">Tacos</button>
+                    <button class="category-btn" data-category="panini">Panini</button>
+                    <button class="category-btn" data-category="pasta">Pasta</button>
+                </div>
+            </div>
+            
+            <div class="dishes-showcase">
+                <div class="dish-card" data-category="tacos">
+                    <div class="dish-card-inner">
+                        <div class="dish-image">
+                            <div class="dish-overlay"></div>
+                            <img src="images/tacos.jpg" alt="Taj Mahal Tacos">
+                            <span class="price-tag">38 DH</span>
+                        </div>
+                        <div class="dish-content">
+                            <h3>Taj Mahal Tacos</h3>
+                            <p>Our signature blend of premium ingredients</p>
+                            <div class="dish-tags">
+                                <span class="tag">Bestseller</span>
+                                <span class="tag">Special</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-category="panini">
+                    <div class="dish-card-inner">
+                        <div class="dish-image">
+                            <div class="dish-overlay"></div>
+                            <img src="images/panini.jpg" alt="Thon Fromage Panini">
+                            <span class="price-tag">17 DH</span>
+                        </div>
+                        <div class="dish-content">
+                            <h3>Thon Fromage Panini</h3>
+                            <p>Classic tuna and cheese combination</p>
+                            <div class="dish-tags">
+                                <span class="tag">Popular</span>
+                                <span class="tag">Seafood</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card" data-category="pasta">
+                    <div class="dish-card-inner">
+                        <div class="dish-image">
+                            <div class="dish-overlay"></div>
+                            <img src="images/pasta.jpg" alt="Fruits de mer Pasta">
+                            <span class="price-tag">40 DH</span>
+                        </div>
+                        <div class="dish-content">
+                            <h3>Fruits de mer Pasta</h3>
+                            <p>Fresh seafood with your choice of pasta</p>
+                            <div class="dish-tags">
+                                <span class="tag">Premium</span>
+                                <span class="tag">Seafood</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dish-card featured" data-category="tacos">
+                    <div class="dish-card-inner">
+                        <div class="dish-image">
+                            <div class="dish-overlay"></div>
+                            <img src="images/tacos-xxl.jpg" alt="Double XXL Maxi Tacos">
+                            <span class="price-tag">55 DH</span>
+                        </div>
+                        <div class="dish-content">
+                            <h3>Double XXL Maxi Tacos</h3>
+                            <p>Our biggest portion for serious appetites</p>
+                            <div class="dish-tags">
+                                <span class="tag">XXL</span>
+                                <span class="tag">Popular</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dishes-stats">
+                <div class="stat-item">
+                    <div class="stat-circle">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <path class="circle" stroke-dasharray="90, 100" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        </svg>
+                        <span class="stat-number">90%</span>
+                    </div>
+                    <h4>Customer Satisfaction</h4>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-circle">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <path class="circle" stroke-dasharray="85, 100" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        </svg>
+                        <span class="stat-number">1K+</span>
+                    </div>
+                    <h4>Monthly Orders</h4>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-circle">
+                        <svg viewBox="0 0 36 36" class="circular-chart">
+                            <path class="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                            <path class="circle" stroke-dasharray="95, 100" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        </svg>
+                        <span class="stat-number">4.8</span>
+                    </div>
+                    <h4>Rating</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>07.70.87.57.13</p>
+                    <p>05.20.09.43.87</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Khouribga, Morocco</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Open Daily: 11:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Taj Mahal Logo">
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com/Snack_taj_mahal"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/snack_taj_mahal"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Taj Mahal Restaurant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
